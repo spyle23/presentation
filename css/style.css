@@ -1,0 +1,498 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    color: white;
+    background: url('../img/fond.jpg') rgba(7, 44, 4, 0.164) no-repeat top left;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/************************************************************************************************************/
+
+
+/*                                                 HEADER                                                   */
+
+
+/************************************************************************************************************/
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: rgba(4, 15, 3, 0.877);
+    padding: 10px 10%;
+}
+
+header div {
+    width: 10%;
+}
+
+
+
+header nav {
+    width: 90%;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+header nav ul li {
+    display: block;
+}
+
+header nav ul li a {
+    display: block;
+    padding: 10px 35px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Lucida Sans';
+    transition: .2s;
+}
+
+header nav ul li a:hover {
+    background-color: rgba(1, 19, 2, 0.438);
+    color: rgb(170, 214, 172);
+    transition: .6s ease;
+}
+
+
+/************************************************************************************************************/
+
+
+/*                                           SECTION ACCUEIL                                                */
+
+
+/************************************************************************************************************/
+
+section#accueil {
+    background: url('../img/fond.jpg') rgba(7, 44, 4, 0.164) no-repeat top left;
+    background-size: cover;
+}
+
+section#accueil>div.container {
+    background-color: rgba(0, 12, 2, 0.295);
+    color: white;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 8%;
+}
+
+section#accueil h1 {
+    font-size: 50px;
+}
+
+section#accueil p {
+    font-size: 20px;
+}
+
+section#accueil button {
+    padding: 15px 30px;
+    color: white;
+    background-color: rgba(0, 12, 2, 0.856);
+    border: 0px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: .5s;
+}
+
+section#accueil button:hover {
+    padding: 15px 30px;
+    color: rgba(0, 12, 2, 0.856);
+    background-color: rgb(220, 235, 222);
+    border: 0px;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: 1s;
+}
+
+
+/************************************************************************************************************/
+
+
+/*                                              Presentation                                                */
+
+
+/************************************************************************************************************/
+
+section#presentation {
+    padding: 30px 100px;
+    background-color: rgba(110, 185, 123, 0.945);
+}
+
+section#presentation>div.container {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 20px;
+    background-color: rgba(34, 102, 26, 0.774);
+    border: 1px solid rgba(30, 94, 23, 0.959);
+    box-shadow: 0 0 10px 3px rgb(23, 63, 8);
+    padding: 5px;
+    transition: .5s;
+}
+
+section#presentation>div.container:hover {
+    background-color: rgba(22, 80, 16, 0.342);
+    transition: 1s;
+}
+
+section#presentation div.container-image,
+section#presentation div.container-description {
+    width: 50%;
+}
+
+section#presentation div.container-image {
+    overflow: hidden;
+    background-color: rgb(25, 70, 36);
+    height: 100%;
+}
+
+section#presentation div.container-description div.sous-titre {
+    padding: 0px 20px;
+}
+
+section#presentation div.container-description div.sous-titre h2,
+section#presentation div.container-description div.sous-titre p {
+    margin: 0;
+}
+
+section#presentation div.container-description div.sous-titre h2 {
+    font-family: 'Gill Sans MT';
+    font-size: 2em;
+}
+
+section#presentation div.container-description div.sous-titre p {
+    font-family: 'Gill Sans MT';
+    color: rgb(175, 180, 175);
+}
+
+section#presentation div.container-description div.blabla {
+    padding: 10px;
+}
+
+section#presentation div.container-description p {
+    text-align: justify;
+}
+
+section#presentation div.container-image>img {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+section#presentation div.container-image>img:hover {
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+
+/************************************************************************************************************/
+
+
+/*                                              SERVICES                                                    */
+
+
+/************************************************************************************************************/
+
+section#services {
+    padding: 30px 100px;
+    background-color: rgba(182, 216, 187, 0.945);
+    display: flex;
+    flex-flow: row wrap;
+}
+
+section#services div.titre h1 {
+    color: rgba(6, 68, 22, 1);
+}
+
+section#services div.container {
+    width: 33.333%;
+    margin-bottom: 10px;
+}
+
+section#services div.container div.p-10 {
+    padding: 10px;
+}
+
+section#services div.container div.corps {
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 5px 3px rgb(23, 63, 8);
+}
+
+section#services div.container div.corps div.bordered {
+    border: 1px solid green;
+    background-color: rgba(0, 12, 2, 0.521);
+    border-radius: 10px;
+    position: relative;
+}
+
+section#services div.container div.corps div.ombre {
+    background-color: rgba(0, 12, 2, 0.801);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+section#services div.container div.corps div.ombre {
+    background-color: rgba(0, 12, 2, 0.801);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    border-radius: 10px;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+section#services div.container div.corps div.ombre::before {
+    font-size: 50px;
+    position: absolute;
+    top: 40%;
+    left: 43%;
+}
+
+section#services div.container:hover div.corps div.ombre {
+    height: 100%;
+    opacity: 1;
+    transition: 1s;
+}
+
+section#services div.container-image,
+section#services div.container-description {
+    padding: 10px;
+}
+
+section#services div.container-description div.blabla {
+    width: 100%;
+}
+
+section#services div.container-image img {
+    width: 100%;
+}
+
+section#services div.container-description h3 {
+    font-size: 30px;
+    font-family: 'Gill Sans MT';
+    margin: 0;
+}
+
+section#services div.container-description p {
+    text-align: justify;
+    margin: 0;
+}
+
+section#services div.container-description button {
+    margin-top: 20px;
+}
+
+
+/************************************************************************************************************/
+
+
+/*                                              CONTACT                                                    */
+
+
+/************************************************************************************************************/
+
+section#contact {
+    padding: 30px 100px;
+    background-color: rgba(52, 110, 60, 0.945);
+    display: flex;
+    flex-flow: row wrap;
+}
+
+section#contact div.container-formulaire {
+    width: 65%;
+}
+
+section#contact div.container-formulaire form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+section#contact div.container-formulaire form div.block {
+    width: 96%;
+}
+
+section#contact div.container-formulaire form div.block,
+section#contact div.container-formulaire form div.demi-block {
+    padding: 0px;
+}
+
+section#contact div.container-formulaire form div.demi-block {
+    width: 46%;
+}
+
+section#contact div.container-formulaire .formulaire {
+    display: block;
+    width: 100%;
+    border: 1px solid rgb(126, 158, 131);
+    border-radius: 5px;
+    padding: 10px 5px;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+section#contact div.container-formulaire .formulaire::placeholder {
+    font-size: 1em;
+}
+
+section#contact div.container-formulaire .formulaire:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 1px rgba(1, 39, 7, 0.767)
+}
+
+section#contact div.container-contact {
+    width: 35%;
+}
+
+section#contact div.container-contact div.corps {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+section#contact div.container-contact div.corps div.block {
+    padding: 15px;
+    display: flex;
+    position: relative;
+}
+
+section#contact div.container-contact div.corps div.block:hover {
+    background-color: rgba(42, 126, 56, 0.801);
+}
+
+section#contact div.container-contact div.corps div.block .icon {
+    width: 20%;
+}
+
+section#contact div.container-contact div.corps div.block .description {
+    width: 80%;
+}
+
+section#contact div.container-contact div.corps div.block .description h3,
+section#contact div.container-contact div.corps div.block .description p {
+    margin: 0;
+}
+
+section#contact div.container-contact div.corps div.block .description h3 a {
+    color: white;
+    text-decoration: none;
+}
+
+section#contact div.container-contact div.corps div.block .description p {
+    color: rgb(185, 185, 185);
+}
+
+section#contact div.container-contact div.corps div.block .icon i::before {
+    font-size: 40px;
+    position: absolute;
+    left: 7%;
+    top: 15%;
+}
+
+
+/************************************************************************************************************/
+
+
+/*                                                FOOTER                                                    */
+
+
+/************************************************************************************************************/
+
+footer {
+    background-color: rgba(0, 12, 2, 0.973);
+    padding: 20px 0px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-family: 'Gill Sans MT';
+}
+
+
+/************************************************************************************************************/
+
+
+/*                                              BACK TO TOP                                                */
+
+
+/************************************************************************************************************/
+
+a#back-to-top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding-left: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(9, 32, 3, 0.637);
+    color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 3px rgb(8, 27, 1);
+}
+
+a#back-to-top:hover {
+    background-color: rgba(224, 235, 222, 0.637);
+    color: rgba(9, 32, 3, 0.637);
+}
+
+a#back-to-top>i::before {
+    font-size: 25px;
+}
+
+
+/************************************************************************************************************/
+
+
+/*                                                  GLOBAL                                                  */
+
+
+/************************************************************************************************************/
+
+div.titre {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+div.titre h1 {
+    width: 40%;
+    font-size: 3.5em;
+    border-bottom: 3px solid rgba(3, 22, 1, 0.781);
+}
+
+.btn {
+    padding: 15px 30px;
+    color: white;
+    background-color: rgba(7, 37, 4, 0.76);
+    border: 0px;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: .2s;
+}
+
+.btn:hover {
+    transition: .5s;
+    color: rgba(16, 65, 11, 0.959);
+    background-color: rgba(152, 189, 148, 0.959);
+}
