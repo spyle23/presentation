@@ -22,6 +22,8 @@ body {
 header {
     display: flex;
     flex-flow: row wrap;
+    position: sticky;
+    top: 0;
     background-color: rgba(4, 15, 3, 0.877);
     padding: 10px 10%;
 }
@@ -213,62 +215,39 @@ section#services div.titre h1 {
     color: rgba(6, 68, 22, 1);
 }
 
-section#services div.container {
-    width: 33.333%;
+section#services div.container-grand{
+    width: max-content;
+    display: grid;
+    grid-template-columns: 33.333% 33.333% 33.333%;
+    gap: 1%;
+}
+
+section#services div.container-grand div.container {
     margin-bottom: 10px;
 }
 
-section#services div.container div.p-10 {
+section#services div.container-grand div.container div.p-10 {
     padding: 10px;
 }
 
-section#services div.container div.corps {
-    position: relative;
+section#services div.container-grand div.container div.corps {
     border-radius: 10px;
     box-shadow: 0px 5px 3px rgb(23, 63, 8);
 }
 
-section#services div.container div.corps div.bordered {
+section#services div.container-grand div.container div.corps div.bordered {
     border: 1px solid green;
     background-color: rgba(0, 12, 2, 0.521);
     border-radius: 10px;
-    position: relative;
 }
 
-section#services div.container div.corps div.ombre {
+.ombre {
     background-color: rgba(0, 12, 2, 0.801);
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     border-radius: 10px;
 }
 
-section#services div.container div.corps div.ombre {
-    background-color: rgba(0, 12, 2, 0.801);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 0%;
-    border-radius: 10px;
-    transition: 0.5s;
-    opacity: 0;
-}
-
-section#services div.container div.corps div.ombre::before {
-    font-size: 50px;
-    position: absolute;
-    top: 40%;
-    left: 43%;
-}
-
-section#services div.container:hover div.corps div.ombre {
-    height: 100%;
-    opacity: 1;
-    transition: 1s;
-}
 
 section#services div.container-image,
 section#services div.container-description {
@@ -495,4 +474,38 @@ div.titre h1 {
     transition: .5s;
     color: rgba(16, 65, 11, 0.959);
     background-color: rgba(152, 189, 148, 0.959);
+}
+/************************************************************************************************************/
+
+
+/*                                       Animation                                                          */
+
+
+/************************************************************************************************************/
+
+
+.clickAnim{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: linear-gradient(to top, rgb(163, 194, 26), rgb(135, 214, 168));
+    position: absolute;
+    z-index: 9000;
+    transform: scale(0);
+    transform-origin: center;
+    animation: clickAnim 1s ease-in-out;
+}
+
+@keyframes clickAnim{
+    0% {
+        transform: scale(0);
+    }   
+    50% {
+        transform: scale(2);
+        opacity: 1;
+    }
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
 }
